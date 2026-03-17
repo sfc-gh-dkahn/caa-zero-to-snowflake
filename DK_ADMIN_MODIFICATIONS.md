@@ -15,7 +15,7 @@ All object names in `admin.ipynb` were refactored from cryptic abbreviations to 
 | **DB-level rollup roles** | Z2S_DB_R, Z2S_DB_W, Z2S_DB_C | DB_READ, DB_WRITE, DB_CREATE | Same pattern, clearer |
 | **Functional roles assigned to users** | Z2S_FINANCE_ANALYST gets create on finance + read on governance | FINANCE_ANALYST gets create on finance + read on governance | Same privileges |
 | **Functional role with limited access** | Z2S_HR_MANAGER gets read-only on HR + governance | MARKETING_MANAGER gets read-only on marketing + governance | Same privilege contrast |
-| **Person user vs Service user** | JOHN_ANALYST (person) vs HR_SERVICE_ACCOUNT (service) | GORDON_GEKKO (person) vs MARKETING_AUTOMATION (service) | Same distinction, memorable names |
+| **Person user vs Service user** | JOHN_ANALYST (person) vs HR_SERVICE_ACCOUNT (service) | WARREN_BUFFET (person) vs MARKETING_AUTOMATION (service) | Same distinction, memorable names |
 | **Role testing by switching roles** | USE ROLE + SELECT to prove access works | Identical | No change |
 | **Monitoring grants/privileges** | SHOW GRANTS + ACCOUNT_USAGE query | Identical | No change |
 | **Tags + tag-based masking** | PII_LEVEL tag -> PII_MASK policy | Identical | No change |
@@ -90,7 +90,7 @@ All object names in `admin.ipynb` were refactored from cryptic abbreviations to 
 ### Users
 | Original | New | Type |
 |----------|-----|------|
-| `JOHN_ANALYST` | `GORDON_GEKKO` | PERSON |
+| `JOHN_ANALYST` | `WARREN_BUFFET` | PERSON |
 | `HR_SERVICE_ACCOUNT` | `MARKETING_AUTOMATION` | SERVICE |
 
 ### Warehouses
